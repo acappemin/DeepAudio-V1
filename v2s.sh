@@ -1,0 +1,1 @@
+python ./F5-TTS/src/f5_tts/infer/infer_cli_test.py --output_dir ./tests/outputs_v2c_l44_test/ --start 0 --end 10 --ckpt_file ./F5-TTS/ckpts/v2c/model_14272.pt --v2a_path ./tests/v2a_l44_test/ --infer_list ./tests/v2c_test.lst
