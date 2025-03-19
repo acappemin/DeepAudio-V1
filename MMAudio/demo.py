@@ -16,6 +16,7 @@ from datetime import datetime
 import traceback
 
 import numpy as np
+import os
 
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True
@@ -181,16 +182,17 @@ def main():
         
         #### calculate energy
         if args.calc_energy:
-            waveform, sr = torchaudio.load(audio_path)
-            duration = waveform.shape[-1] / sr
             waveform_v2a, sr_v2a = torchaudio.load(save_path)
             duration_v2a = waveform_v2a.shape[-1] / sr_v2a
 
-            if duration_v2a >= duration:
-                waveform_v2a = waveform_v2a[:, :int(sr_v2a*duration)]
-            else:
-                waveform_v2a = torch.cat([waveform_v2a, torch.zeros([waveform_v2a.shape[0], int(sr_v2a*duration)-waveform_v2a.shape[1]])], dim=1)
-            duration_v2a = duration
+            if os.path.exists(audio_path):
+                waveform, sr = torchaudio.load(audio_path)
+                duration = waveform.shape[-1] / sr
+                if duration_v2a >= duration:
+                    waveform_v2a = waveform_v2a[:, :int(sr_v2a*duration)]
+                else:
+                    waveform_v2a = torch.cat([waveform_v2a, torch.zeros([waveform_v2a.shape[0], int(sr_v2a*duration)-waveform_v2a.shape[1]])], dim=1)
+                duration_v2a = duration
             
             energy_v2a = []
             for i in range(int(duration_v2a/(256/24000))):
