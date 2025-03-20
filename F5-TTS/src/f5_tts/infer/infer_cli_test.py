@@ -478,16 +478,6 @@ if __name__ == "__main__":
             torchaudio.save(output_dir+"/gen/"+str(i+args.start).zfill(8)+".wav", normalize_wav(wav_gen[0:1,:], waveform_p[0:1,:]), 24000)
             torchaudio.save(output_dir+"/tgt/"+str(i+args.start).zfill(8)+".wav", waveform[0:1,:], 24000)
 
-            #if not os.path.exists(output_dir+"/ref_nonorm/"):
-            #    os.makedirs(output_dir+"/ref_nonorm/")
-            #if not os.path.exists(output_dir+"/gen_nonorm/"):
-            #    os.makedirs(output_dir+"/gen_nonorm/")
-            #if not os.path.exists(output_dir+"/tgt_nonorm/"):
-            #    os.makedirs(output_dir+"/tgt_nonorm/")
-            #torchaudio.save(output_dir+"/ref_nonorm/"+str(i+args.start).zfill(8)+".wav", waveform_p[0:1,:], 24000)
-            #torchaudio.save(output_dir+"/gen_nonorm/"+str(i+args.start).zfill(8)+".wav", wav_gen[0:1,:], 24000)
-            #torchaudio.save(output_dir+"/tgt_nonorm/"+str(i+args.start).zfill(8)+".wav", waveform[0:1,:], 24000)
-
             if not os.path.exists(output_dir+"/videos/"):
                 os.makedirs(output_dir+"/videos/")
 
