@@ -6,5 +6,5 @@ F5-TTS/ckpts/wavlm_large_finetune.pth
 F5-TTS/src/f5_tts.egg-info/
 **/__pycache__
 tests/outputs_v2c_l44_test/
-tests/v2a_l44_test/
-
+tests/outputs_v2a_l44_test/
+tests/outputs_tts/

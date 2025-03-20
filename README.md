@@ -38,16 +38,22 @@ The models are available at https://huggingface.co/. See [MODELS.md](./MODELS.md
 
 ## Inference
 
-### 1. V2A inference
+**1. V2A inference**
 
 ```bash
 bash v2a.sh
 ```
 
-### 2. V2S inference
+**2. V2S inference**
 
 ```bash
 bash v2s.sh
+```
+
+**3. TTS inference**
+
+```bash
+bash tts.sh
 ```
 
 ## Evaluation

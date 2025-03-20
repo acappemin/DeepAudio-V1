@@ -13,9 +13,6 @@ import tomli
 from cached_path import cached_path
 from omegaconf import OmegaConf
 
-from moviepy.editor import VideoFileClip, AudioFileClip
-
-
 from f5_tts.infer.utils_infer import (
     mel_spec_type,
     target_rms,
@@ -177,11 +174,6 @@ parser.add_argument(
     "--end",
     type=int,
     default=99999999,
-)
-parser.add_argument(
-    "--v2a_path",
-    type=str,
-    default="",
 )
 parser.add_argument(
     "--infer_list",
@@ -404,51 +396,26 @@ def normalize_wav(waveform, waveform_ref):
 
 
 if __name__ == "__main__":
+    
     scp = args.infer_list
-
-    v2a_path = args.v2a_path
 
     with open(scp, "r") as fr:
         lines = fr.readlines()
 
     datas2 = []
-    for line in lines:
-        wav_p, video_p, txt_p, wav, video, txt = line.strip().split("\t")
-        datas2.append([[video, txt, wav], [video_p, txt_p, wav_p]])
+    for idx, line in enumerate(lines):
+        wav_p, dur_p, text_p, wav, dur, text = line.strip().split("\t")
+        datas2.append(((text, wav), (text_p, wav_p)))
 
-    print("datas2", len(datas2))
+
     if True:
         for i, (data, data_p) in enumerate(datas2[args.start:args.end]):
-            video, txt, wav = data
-            video_p, txt_p, wav_p = data_p
+            txt, wav = data
+            txt_p, wav_p = data_p
 
-            v2a_audio = v2a_path + video.replace("/", "__").strip(".") + ".flac"
-            v2a_audio_p = v2a_path + video_p.replace("/", "__").strip(".") + ".flac"
-
-            print(video, wav, v2a_audio, video_p, wav_p, v2a_audio_p)
-
-            if not os.path.exists(video) or not os.path.exists(wav) or not os.path.exists(v2a_audio):
-                continue
-            if not os.path.exists(video_p) or not os.path.exists(wav_p) or not os.path.exists(v2a_audio_p):
-                continue
-
-            energy = torch.from_numpy(np.load(v2a_audio+".npz")["arr_0"]).unsqueeze(0).unsqueeze(2)
-            energy_p = torch.from_numpy(np.load(v2a_audio_p+".npz")["arr_0"]).unsqueeze(0).unsqueeze(2)
-            #print("energy shape", energy_p.shape, energy.shape)
-            #energy = torch.cat([energy_p, energy], dim=1)
-
-            try:
-                ####wav_gen, sr_gen = main(wav_p, txt_p, txt, [torch.zeros_like(energy_p), torch.zeros_like(energy)])
-                ####wav_gen, sr_gen = main(wav_p, txt_p, txt, None)
-                ####wav_gen, sr_gen = main(wav, txt, txt, None)
-                wav_gen, sr_gen = main(wav_p, txt_p, txt, [energy_p, energy])
-                ####wav_gen, sr_gen = main(wav, txt, txt, [energy.clone(), energy])
-                wav_gen = torch.from_numpy(wav_gen).unsqueeze(0)
-                assert(sr_gen == 24000)
-            except:
-                print("error generation", i+args.start, txt_p, txt)
-                wav_gen = torch.zeros(1, 24000)
-                sr_gen = 24000
+            wav_gen, sr_gen = main(wav_p, txt_p, txt, None)
+            wav_gen = torch.from_numpy(wav_gen).unsqueeze(0)
+            assert(sr_gen == 24000)
 
             waveform, sr = torchaudio.load(wav)
             if sr != 24000:
@@ -470,17 +437,4 @@ if __name__ == "__main__":
             torchaudio.save(output_dir+"/ref/"+str(i+args.start).zfill(8)+".wav", waveform_p[0:1,:], 24000)
             torchaudio.save(output_dir+"/gen/"+str(i+args.start).zfill(8)+".wav", normalize_wav(wav_gen[0:1,:], waveform_p[0:1,:]), 24000)
             torchaudio.save(output_dir+"/tgt/"+str(i+args.start).zfill(8)+".wav", waveform[0:1,:], 24000)
-
-            if not os.path.exists(output_dir+"/videos/"):
-                os.makedirs(output_dir+"/videos/")
-
-            video_clip = VideoFileClip(video)
-            audio_clip = AudioFileClip(wav)
-            audio_gen_clip = AudioFileClip(output_dir+"/gen/" + str(i+args.start).zfill(8) + ".wav")
-            print("video audio durations", video_clip.duration, audio_clip.duration, audio_gen_clip.duration)
-            os.system("cp " + video + " " + output_dir+"/videos/" + str(i+args.start).zfill(8) + ".mp4")
-            video_clip_gt = video_clip.set_audio(audio_clip)
-            video_clip_gen = video_clip.set_audio(audio_gen_clip)
-            video_clip_gt.write_videofile(output_dir+"/videos/" + str(i+args.start).zfill(8) + ".gt.mp4", codec="libx264", audio_codec="aac")
-            video_clip_gen.write_videofile(output_dir+"/videos/" + str(i+args.start).zfill(8) + ".gen.mp4", codec="libx264", audio_codec="aac")
 
