@@ -1,7 +1,7 @@
 
 
 #test_lst=./eval/v2c_test.lst
-#outputs=/ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/outputs_v2c/
+#outputs=./eval/outputs_v2c_l44/
 
 test_lst=./tests/v2c_test.lst
 outputs=./tests/outputs_v2c_l44_test/

@@ -1,0 +1,10 @@
+MMAudio/ext_weights/
+MMAudio/weights/
+F5-TTS/ckpts/faster-whisper-large-v3/
+F5-TTS/ckpts/v2c/
+F5-TTS/ckpts/wavlm_large_finetune.pth
+F5-TTS/src/f5_tts.egg-info/
+**/__pycache__
+tests/outputs_v2c_l44_test/
+tests/v2a_l44_test/
+

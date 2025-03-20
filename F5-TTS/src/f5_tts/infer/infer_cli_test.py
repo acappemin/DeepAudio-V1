@@ -501,28 +501,3 @@ if __name__ == "__main__":
             video_clip_gt.write_videofile(output_dir+"/videos/" + str(i+args.start).zfill(8) + ".gt.mp4", codec="libx264", audio_codec="aac")
             video_clip_gen.write_videofile(output_dir+"/videos/" + str(i+args.start).zfill(8) + ".gen.mp4", codec="libx264", audio_codec="aac")
 
-
-
-"""
---ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt
---ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/model_14272.pt
-
-CUDA_VISIBLE_DEVICES=0 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_s1/ --start 0 --end 338 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt &
-CUDA_VISIBLE_DEVICES=1 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_s1/ --start 338 --end 676 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt &
-CUDA_VISIBLE_DEVICES=2 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_s1/ --start 676 --end 1014 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt &
-CUDA_VISIBLE_DEVICES=3 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_s1/ --start 1014 --end 1352 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt &
-CUDA_VISIBLE_DEVICES=4 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_s1/ --start 1352 --end 1690 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt &
-CUDA_VISIBLE_DEVICES=5 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_s1/ --start 1690 --end 2028 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt &
-CUDA_VISIBLE_DEVICES=6 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_s1/ --start 2028 --end 2366 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt &
-CUDA_VISIBLE_DEVICES=7 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_s1/ --start 2366 --end 2704 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c/pretrained_model_1200000.pt &
-
-CUDA_VISIBLE_DEVICES=0 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_v2c_s44/ --start 0 --end 338 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c_s44/model_14272.pt --v2a_path /ailab-train/speech/zhanghaomin/codes3/MMAudio-main/output_v2c_s44/ &
-CUDA_VISIBLE_DEVICES=1 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_v2c_s44/ --start 338 --end 676 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c_s44/model_14272.pt --v2a_path /ailab-train/speech/zhanghaomin/codes3/MMAudio-main/output_v2c_s44/ &
-CUDA_VISIBLE_DEVICES=2 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_v2c_s44/ --start 676 --end 1014 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c_s44/model_14272.pt --v2a_path /ailab-train/speech/zhanghaomin/codes3/MMAudio-main/output_v2c_s44/ &
-CUDA_VISIBLE_DEVICES=3 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_v2c_s44/ --start 1014 --end 1352 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c_s44/model_14272.pt --v2a_path /ailab-train/speech/zhanghaomin/codes3/MMAudio-main/output_v2c_s44/ &
-CUDA_VISIBLE_DEVICES=4 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_v2c_s44/ --start 1352 --end 1690 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c_s44/model_14272.pt --v2a_path /ailab-train/speech/zhanghaomin/codes3/MMAudio-main/output_v2c_s44/ &
-CUDA_VISIBLE_DEVICES=5 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_v2c_s44/ --start 1690 --end 2028 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c_s44/model_14272.pt --v2a_path /ailab-train/speech/zhanghaomin/codes3/MMAudio-main/output_v2c_s44/ &
-CUDA_VISIBLE_DEVICES=6 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_v2c_s44/ --start 2028 --end 2366 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c_s44/model_14272.pt --v2a_path /ailab-train/speech/zhanghaomin/codes3/MMAudio-main/output_v2c_s44/ &
-CUDA_VISIBLE_DEVICES=7 nohup python src/f5_tts/infer/infer_cli.py --output_dir outputs_v2c_s44/ --start 2366 --end 2704 --ckpt_file /ailab-train/speech/zhanghaomin/codes3/F5-TTS-main/ckpts/v2c_s44/model_14272.pt --v2a_path /ailab-train/speech/zhanghaomin/codes3/MMAudio-main/output_v2c_s44/ &
-"""
-
