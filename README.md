@@ -52,14 +52,6 @@ bash v2s.sh
 
 ## Evaluation
 
-### 1. Download evaluation model checkpoints
-
-English ASR Model: [Faster-Whisper](https://huggingface.co/Systran/faster-whisper-large-v3)
-
-WavLM Model: Download from [Google Drive](https://drive.google.com/file/d/1-aE1NfzpRCLxA4GUxX9ITI3F9LlbtEGP/view)
-
-### 2. Metrics Evaluation
-
 ```bash
 bash eval_v2c.sh
 ```
