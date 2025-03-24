@@ -34,7 +34,7 @@ conda install cudnn
 
 **Pretrained models**
 
-The models are available at https://huggingface.co/. See [MODELS.md](./MODELS.md) for more details.
+The models are available at https://huggingface.co/lshzhm/DeepAudio-V1. See [MODELS.md](./MODELS.md) for more details.
 
 ## Inference
 
