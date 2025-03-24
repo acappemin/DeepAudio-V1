@@ -6,7 +6,7 @@
 </div>
 
 
-## [DeepAudio-V1:Towards Multi-Modal Multi-Stage End-to-End Video to Speech and Audio Generation](https://pages.github.com/)
+## DeepAudio-V1:Towards Multi-Modal Multi-Stage End-to-End Video to Speech and Audio Generation
 
 
 ## Installation
