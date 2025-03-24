@@ -2,10 +2,10 @@
 
 | Model    | Download link | File size |
 | -------- | ------- | ------- |
-| Speech synthesis model, based on MMAudio small 16kHz | <a href="https://huggingface.co" download="v2c_s16.pt">v2c_s16.pt</a> | 1.3G |
-| Speech synthesis model, based on MMAudio small 44.1kHz | <a href="https://huggingface.co" download="v2c_s44.pt">v2c_s44.pt</a> | 1.3G |
-| Speech synthesis model, based on MMAudio medium 44.1kHz | <a href="https://huggingface.co" download="v2c_m44.pt">v2c_m44.pt</a> | 1.3G |
-| Speech synthesis model, based on MMAudio large 44.1kHz | <a href="https://huggingface.co" download="v2c_l44.pt">v2c_l44.pt</a> | 1.3G |
+| Speech synthesis model, based on MMAudio small 16kHz | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/blob/main/v2c_s16.pt" download="v2c_s16.pt">v2c_s16.pt</a> | 1.3G |
+| Speech synthesis model, based on MMAudio small 44.1kHz | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/blob/main/v2c_s44.pt" download="v2c_s44.pt">v2c_s44.pt</a> | 1.3G |
+| Speech synthesis model, based on MMAudio medium 44.1kHz | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/blob/main/v2c_m44.pt" download="v2c_m44.pt">v2c_m44.pt</a> | 1.3G |
+| Speech synthesis model, based on MMAudio large 44.1kHz | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/blob/main/v2c_l44.pt" download="v2c_l44.pt">v2c_l44.pt</a> | 1.3G |
 | MMAduio, small 16kHz | <a href="https://huggingface.co/hkchengrex/MMAudio/resolve/main/weights/mmaudio_small_16k.pth" download="mmaudio_small_16k.pth">mmaudio_small_16k.pth</a> | 601M |
 | MMAduio, small 44.1kHz | <a href="https://huggingface.co/hkchengrex/MMAudio/resolve/main/weights/mmaudio_small_44k.pth" download="mmaudio_small_44k.pth">mmaudio_small_44k.pth</a> | 601M |
 | MMAduio, medium 44.1kHz | <a href="https://huggingface.co/hkchengrex/MMAudio/resolve/main/weights/mmaudio_medium_44k.pth" download="mmaudio_medium_44k.pth">mmaudio_medium_44k.pth</a> | 2.4G |
