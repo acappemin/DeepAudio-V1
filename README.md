@@ -9,6 +9,55 @@
 ## DeepAudio-V1:Towards Multi-Modal Multi-Stage End-to-End Video to Speech and Audio Generation
 
 
+## Results
+
+<div style="padding: 0 0; text-align: center; display: flex; justify-content: space-around;">
+	<p style="text-align: center;">Ground Truth</p>
+	<p style="text-align: center;">Generated Audios</p>
+</div>
+<div class="row">
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000001.gt.mp4">
+	</video>
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000001.gen.mp4">
+	</video>
+</div>
+<div class="row">
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000003.gt.mp4">
+	</video>
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000003.gen.mp4">
+	</video>
+</div>
+<div class="row">
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000024.gt.mp4">
+	</video>
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000024.gen.mp4">
+	</video>
+</div>
+<div class="row">
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000025.gt.mp4">
+	</video>
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000025.gen.mp4">
+	</video>
+</div>
+<div class="row">
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000111.gt.mp4">
+	</video>
+	<video style="width: 49%;" controls>
+		<source src="https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000111.gen.mp4">
+	</video>
+</div>
+
+
+
 ## Installation
 
 **1. Create a conda environment**
