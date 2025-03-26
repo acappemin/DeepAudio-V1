@@ -11,9 +11,9 @@
 
 ## Results of Video-to-Speech Synthesis
 
-https://github.com/user-attachments/assets/a3498bf9-64fc-407c-b9ba-c5a41e2f9f18
+https://github.com/user-attachments/assets/2c474edd-e12a-41c4-970d-66e414ccf317
 
-https://github.com/user-attachments/assets/792fa98e-0908-42d9-ad59-f2ad0842e2fb
+https://github.com/user-attachments/assets/160bf9e6-cbf9-4fa4-92b7-f303ea81cd3e
 
 For more results, please visit https://acappemin.github.io/DeepAudio-V1.github.io.
 
