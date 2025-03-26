@@ -11,11 +11,11 @@
 
 ## Results of Video-to-Speech Synthesis
 
-https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000025.gen.mp4
+https://github.com/user-attachments/assets/a3498bf9-64fc-407c-b9ba-c5a41e2f9f18
 
-https://acappemin.github.io/DeepAudio-V1.github.io/assets/videos/00000111.gen.mp4
+https://github.com/user-attachments/assets/792fa98e-0908-42d9-ad59-f2ad0842e2fb
 
-For more results, visit https://acappemin.github.io/DeepAudio-V1.github.io.
+For more results, please visit https://acappemin.github.io/DeepAudio-V1.github.io.
 
 ## Installation
 
