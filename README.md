@@ -1,7 +1,7 @@
 <div align="center">
 <p align="center">
   <h2>DeepAudio-V1</h2>
-  <a href="https://arxiv.org">Paper</a> | <a href="https://acappemin.github.io/DeepAudio-V1.github.io">Webpage</a> | <a href="https://huggingface.co/spaces/lshzhm/DeepAudio-V1">Huggingface Demo</a> | <a href="https://huggingface.co/lshzhm/DeepAudio-V1">Models</a>
+  <a href="https://arxiv.org">Paper</a> | <a href="https://acappemin.github.io/DeepAudio-V1.github.io">Webpage</a> | <a href="https://huggingface.co/spaces/lshzhm/DeepAudio-V1">Huggingface Demo</a> | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/tree/main">Models</a>
 </p>
 </div>
 
@@ -42,7 +42,7 @@ conda install cudnn
 
 **Pretrained models**
 
-The models are available at https://huggingface.co/lshzhm/DeepAudio-V1. See [MODELS.md](./MODELS.md) for more details.
+The models are available at https://huggingface.co/lshzhm/DeepAudio-V1/tree/main. See [MODELS.md](./MODELS.md) for more details.
 
 ## Inference
 
