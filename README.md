@@ -13,7 +13,9 @@
 AI Lab Giant Network, and University of Trento
 
 
-## Results of Video-to-Speech Synthesis
+## Results
+
+<img width="100%" alt="Image" src="https://github.com/user-attachments/assets/cd92a174-b79a-421a-a9a1-1d2a0af284e1"/>
 
 https://github.com/user-attachments/assets/2c474edd-e12a-41c4-970d-66e414ccf317
 
