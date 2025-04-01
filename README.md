@@ -8,7 +8,7 @@
 
 ## DeepAudio-V1:Towards Multi-Modal Multi-Stage End-to-End Video to Speech and Audio Generation
 
-[Haomin Zhang](https://scholar.google.com/citations?user=cxj9ZbAAAAAJ), [Chang Liu](), [Junjie Zheng](), [Zihao Chen](), [Chaofan Ding](), [Xinhan Di]()
+[Haomin Zhang](https://scholar.google.com/citations?user=cxj9ZbAAAAAJ), [Chang Liu](), [Junjie Zheng](https://scholar.google.com/citations?hl=en&user=9lzy9McAAAAJ), [Zihao Chen](), [Chaofan Ding](), [Xinhan Di]()
 
 AI Lab Giant Network, and University of Trento
 
@@ -73,7 +73,6 @@ bash tts.sh
 ```bash
 bash eval_v2c.sh
 ```
-
 
 ## Acknowledgement
 
