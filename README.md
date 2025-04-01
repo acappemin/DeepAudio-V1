@@ -1,12 +1,16 @@
 <div align="center">
 <p align="center">
   <h2>DeepAudio-V1</h2>
-  <a href="https://arxiv.org">Paper</a> | <a href="https://acappemin.github.io/DeepAudio-V1.github.io">Webpage</a> | <a href="https://huggingface.co/spaces/lshzhm/DeepAudio-V1">Huggingface Demo</a> | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/tree/main">Models</a>
+  <a href="https://arxiv.org/abs/2503.22265">Paper</a> | <a href="https://acappemin.github.io/DeepAudio-V1.github.io">Webpage</a> | <a href="https://huggingface.co/spaces/lshzhm/DeepAudio-V1">Huggingface Demo</a> | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/tree/main">Models</a>
 </p>
 </div>
 
 
 ## DeepAudio-V1:Towards Multi-Modal Multi-Stage End-to-End Video to Speech and Audio Generation
+
+[Haomin Zhang](https://scholar.google.com/citations?user=cxj9ZbAAAAAJ), [Chang Liu](), [Junjie Zheng](), [Zihao Chen](), [Chaofan Ding](), [Xinhan Di]()
+
+AI Lab Giant Network, and University of Trento
 
 
 ## Results of Video-to-Speech Synthesis
