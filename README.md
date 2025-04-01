@@ -15,7 +15,7 @@ AI Lab Giant Network, and University of Trento
 
 ## Results
 
-<img width="100%" alt="Image" src="https://github.com/user-attachments/assets/cd92a174-b79a-421a-a9a1-1d2a0af284e1"/>
+<img width="100%" alt="Image" src="https://github.com/user-attachments/assets/4afe5527-5a3e-40a2-9fe6-139db39144d7"/>
 
 https://github.com/user-attachments/assets/2c474edd-e12a-41c4-970d-66e414ccf317
 
