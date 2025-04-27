@@ -1,7 +1,7 @@
 <div align="center">
 <p align="center">
   <h2>DeepAudio-V1</h2>
-  <a href="https://arxiv.org/abs/2503.22265">Paper</a> | <a href="https://acappemin.github.io/DeepAudio-V1.github.io">Webpage</a> | <a href="https://huggingface.co/spaces/lshzhm/DeepAudio-V1">Huggingface Demo</a> | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/tree/main">Models</a>
+  <a href="https://arxiv.org/abs/2503.22265">Paper</a> | <a href="https://acappemin.github.io/DeepAudio-V1.github.io">Webpage</a> | <a href="https://huggingface.co/lshzhm/DeepAudio-V1/tree/main">Models</a> | <a href="https://huggingface.co/spaces/lshzhm/DeepAudio-V1">Huggingface Demo</a> | <a href="https://colab.research.google.com/drive/1tfpv6DxD5q2EFUAIkQKfTI6fgOvWGTPy">Colab Demo</a> | <a href="https://replicate.com/acappemin/deepaudio-v1">Replicate Demo</a>
 </p>
 </div>
 
