@@ -50,7 +50,7 @@ def main():
     parser.add_argument('--start', type=int, default=0)
     parser.add_argument('--end', type=int, default=99999999)
     parser.add_argument('--scp', type=str, help='video list', default='/ailab-train/speech/zhanghaomin/datas/v2cdata/tmp.scp')
-    parser.add_argument('--calc_energy', type=int, default=0)
+    parser.add_argument('--calc_energy', type=int, default=1)
 
     parser.add_argument('--mask_away_clip', action='store_true')
 

@@ -31,8 +31,8 @@ dependencies = [
     "safetensors",
     "soundfile",
     "tomli",
-    "torch>=2.0.0",
-    "torchaudio>=2.0.0",
+    "torch==2.6.0",
+    "torchaudio==2.6.0"
     "torchdiffeq",
     "tqdm>=4.65.0",
     "transformers",
