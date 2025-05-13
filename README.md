@@ -19,7 +19,7 @@ AI Lab Giant Network, and University of Trento
 
 <img width="100%" alt="Image" src="https://github.com/user-attachments/assets/4afe5527-5a3e-40a2-9fe6-139db39144d7"/>
 
-**Videos from movies**
+**Videos from unseen movies**
 
 https://github.com/user-attachments/assets/5a226233-46a4-4746-b158-3e0ac31f192d
 
