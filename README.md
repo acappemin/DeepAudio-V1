@@ -15,11 +15,11 @@ AI Lab Giant Network, and University of Trento
 
 ## Results
 
-**Objective metrics
+**Objective metrics**
 
 <img width="100%" alt="Image" src="https://github.com/user-attachments/assets/4afe5527-5a3e-40a2-9fe6-139db39144d7"/>
 
-**Videos from movies
+**Videos from movies**
 
 https://github.com/user-attachments/assets/5a226233-46a4-4746-b158-3e0ac31f192d
 
@@ -39,13 +39,13 @@ https://github.com/user-attachments/assets/b8631575-28a2-4446-b1f7-7b1e13bb67e2
 
 https://github.com/user-attachments/assets/b4f4b7de-63be-4ee5-9b1f-05fe28365965
 
-**Videos from V2C test set
+**Videos from V2C test set**
 
 https://github.com/user-attachments/assets/2c474edd-e12a-41c4-970d-66e414ccf317
 
 https://github.com/user-attachments/assets/160bf9e6-cbf9-4fa4-92b7-f303ea81cd3e
 
-**For more results, please visit https://acappemin.github.io/DeepAudio-V1.github.io.
+**For more results, please visit https://acappemin.github.io/DeepAudio-V1.github.io.**
 
 ## Installation
 
